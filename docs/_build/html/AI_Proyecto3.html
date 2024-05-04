@@ -1,0 +1,1637 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Parcial 3 AI &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=afe5de03"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'AI_Proyecto3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Parcial 3 AI" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Parcial 3 AI
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Parcial 3 AI</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAI_Proyecto3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/AI_Proyecto3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Parcial 3 AI</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-of-the-data">Preprocessing of the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-training">Model training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-with-different-group-of-data">Test with different group of data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca-for-visualization">PCA for visualization</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="parcial-3-ai">
+<h1>Parcial 3 AI<a class="headerlink" href="#parcial-3-ai" title="Link to this heading">#</a></h1>
+<section id="preprocessing-of-the-data">
+<h2>Preprocessing of the data<a class="headerlink" href="#preprocessing-of-the-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;../Data/abalone.data&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sex</th>
+      <th>Length</th>
+      <th>Diameter</th>
+      <th>Height</th>
+      <th>Whole weight</th>
+      <th>Shucked weight</th>
+      <th>Viscera weight</th>
+      <th>Shell weight</th>
+      <th>Rings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>M</td>
+      <td>0.455</td>
+      <td>0.365</td>
+      <td>0.095</td>
+      <td>0.5140</td>
+      <td>0.2245</td>
+      <td>0.1010</td>
+      <td>0.150</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>M</td>
+      <td>0.350</td>
+      <td>0.265</td>
+      <td>0.090</td>
+      <td>0.2255</td>
+      <td>0.0995</td>
+      <td>0.0485</td>
+      <td>0.070</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>F</td>
+      <td>0.530</td>
+      <td>0.420</td>
+      <td>0.135</td>
+      <td>0.6770</td>
+      <td>0.2565</td>
+      <td>0.1415</td>
+      <td>0.210</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>M</td>
+      <td>0.440</td>
+      <td>0.365</td>
+      <td>0.125</td>
+      <td>0.5160</td>
+      <td>0.2155</td>
+      <td>0.1140</td>
+      <td>0.155</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>I</td>
+      <td>0.330</td>
+      <td>0.255</td>
+      <td>0.080</td>
+      <td>0.2050</td>
+      <td>0.0895</td>
+      <td>0.0395</td>
+      <td>0.055</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 4177 entries, 0 to 4176
+Data columns (total 9 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Sex             4177 non-null   object 
+ 1   Length          4177 non-null   float64
+ 2   Diameter        4177 non-null   float64
+ 3   Height          4177 non-null   float64
+ 4   Whole weight    4177 non-null   float64
+ 5   Shucked weight  4177 non-null   float64
+ 6   Viscera weight  4177 non-null   float64
+ 7   Shell weight    4177 non-null   float64
+ 8   Rings           4177 non-null   int64  
+dtypes: float64(7), int64(1), object(1)
+memory usage: 293.8+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;M&#39;, &#39;F&#39;, &#39;I&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#get dummies of df_abalone</span>
+<span class="n">df_abalone_tmp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">df_abalone</span><span class="p">[</span><span class="s1">&#39;Sex&#39;</span><span class="p">],</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_abalone</span><span class="p">,</span> <span class="n">df_abalone_tmp</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Sex&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Length</th>
+      <th>Diameter</th>
+      <th>Height</th>
+      <th>Whole weight</th>
+      <th>Shucked weight</th>
+      <th>Viscera weight</th>
+      <th>Shell weight</th>
+      <th>Rings</th>
+      <th>I</th>
+      <th>M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.455</td>
+      <td>0.365</td>
+      <td>0.095</td>
+      <td>0.5140</td>
+      <td>0.2245</td>
+      <td>0.1010</td>
+      <td>0.150</td>
+      <td>15</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.350</td>
+      <td>0.265</td>
+      <td>0.090</td>
+      <td>0.2255</td>
+      <td>0.0995</td>
+      <td>0.0485</td>
+      <td>0.070</td>
+      <td>7</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.530</td>
+      <td>0.420</td>
+      <td>0.135</td>
+      <td>0.6770</td>
+      <td>0.2565</td>
+      <td>0.1415</td>
+      <td>0.210</td>
+      <td>9</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.440</td>
+      <td>0.365</td>
+      <td>0.125</td>
+      <td>0.5160</td>
+      <td>0.2155</td>
+      <td>0.1140</td>
+      <td>0.155</td>
+      <td>10</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.330</td>
+      <td>0.255</td>
+      <td>0.080</td>
+      <td>0.2050</td>
+      <td>0.0895</td>
+      <td>0.0395</td>
+      <td>0.055</td>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do a correlation matrix and show it as a heatmap</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df_abalone</span><span class="o">.</span><span class="n">corr</span><span class="p">(),</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: &gt;
+</pre></div>
+</div>
+<img alt="_images/2b0d4bc9ae7172d4f232ae7fbf122bbad1394993d3a7eaf4d95911948ee7c2e7.png" src="_images/2b0d4bc9ae7172d4f232ae7fbf122bbad1394993d3a7eaf4d95911948ee7c2e7.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the columns that are correlated with each other with a correlation higher than 0.85</span>
+
+<span class="c1"># df_abalone.drop(&quot;Length&quot;, axis=1, inplace=True)</span>
+<span class="c1"># df_abalone.drop(&quot;Diameter&quot;, axis=1, inplace=True)</span>
+<span class="c1"># df_abalone.drop(&quot;Whole weight&quot;, axis=1, inplace=True)</span>
+<span class="c1"># df_abalone.drop(&quot;Shucked weight&quot;, axis=1, inplace=True)</span>
+<span class="c1"># df_abalone.drop(&quot;Viscera weight&quot;, axis=1, inplace=True)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([15,  7,  9, 10,  8, 20, 16, 19, 14, 11, 12, 18, 13,  5,  4,  6, 21,
+       17, 22,  1,  3, 26, 23, 29,  2, 27, 25, 24])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>28
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># see how many unique values are in the column &quot;Rings&quot; for each value of ring</span>
+<span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rings
+9     689
+10    634
+8     568
+11    487
+7     391
+12    267
+6     259
+13    203
+14    126
+5     115
+15    103
+16     67
+17     58
+4      57
+18     42
+19     32
+20     26
+3      15
+21     14
+23      9
+22      6
+27      2
+24      2
+1       1
+26      1
+29      1
+2       1
+25      1
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<p>We have a lot of data for certain values and not much for others, we will see how it will work out</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 4177 entries, 0 to 4176
+Data columns (total 10 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   Length          4177 non-null   float64
+ 1   Diameter        4177 non-null   float64
+ 2   Height          4177 non-null   float64
+ 3   Whole weight    4177 non-null   float64
+ 4   Shucked weight  4177 non-null   float64
+ 5   Viscera weight  4177 non-null   float64
+ 6   Shell weight    4177 non-null   float64
+ 7   Rings           4177 non-null   int64  
+ 8   I               4177 non-null   bool   
+ 9   M               4177 non-null   bool   
+dtypes: bool(2), float64(7), int64(1)
+memory usage: 269.3 KB
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="model-training">
+<h2>Model training<a class="headerlink" href="#model-training" title="Link to this heading">#</a></h2>
+<p>i will create a dictionary containg every model we will be analyzing to make it more readable to analyze the results</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import knn classification,random forest classification, redes neurais, svm, naive bayes</span>
+<span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.neural_network</span> <span class="kn">import</span> <span class="n">MLPClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+
+<span class="n">model_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;Knn&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">KNeighborsClassifier</span><span class="p">(),</span> <span class="s1">&#39;grid&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;model__n_neighbors&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">40</span><span class="p">)}}</span>
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;Random Forest&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span> <span class="s1">&#39;grid&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;model__max_depth&#39;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span><span class="s1">&#39;model__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">200</span><span class="p">,</span> <span class="mi">300</span><span class="p">]},</span> <span class="s1">&#39;n_estimators&#39;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)}</span>
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;Neural Network&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">MLPClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span> <span class="s1">&#39;grid&#39;</span><span class="p">:</span> <span class="p">{}}</span>
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;SVM&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">SVC</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span> <span class="s1">&#39;grid&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;model__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span><span class="s1">&#39;model__gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">]}}</span>
+<span class="n">model_dict</span><span class="p">[</span><span class="s1">&#39;Naive Bayes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">GaussianNB</span><span class="p">(),</span> <span class="s1">&#39;grid&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;model__var_smoothing&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1e-09</span><span class="p">,</span> <span class="mf">1e-08</span><span class="p">,</span> <span class="mf">1e-07</span><span class="p">,</span> <span class="mf">1e-06</span><span class="p">,</span> <span class="mf">1e-05</span><span class="p">,</span> <span class="mf">1e-04</span><span class="p">,</span> <span class="mf">1e-03</span><span class="p">,</span> <span class="mf">1e-02</span><span class="p">,</span> <span class="mf">1e-01</span><span class="p">]}}</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span><span class="p">,</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Rings&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span> 
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>thanks to a gridsearchcv i will find the best hyperparameters for each model and then train it with this params, and so we will get the best possible results that model can give us</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training model: &quot;</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+    <span class="n">pipe</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scaler&#39;</span><span class="p">,</span> <span class="n">MinMaxScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">])])</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipe</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;grid&#39;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters: &quot;</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_pred</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Training model:  Knn
+Best parameters:  {&#39;model__n_neighbors&#39;: 40}
+Training model:  Random Forest
+Best parameters:  {&#39;model__max_depth&#39;: 20, &#39;model__n_estimators&#39;: 100}
+Training model:  Neural Network
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best parameters:  {}
+Training model:  SVM
+Best parameters:  {&#39;model__C&#39;: 100, &#39;model__gamma&#39;: 1}
+Training model:  Naive Bayes
+Best parameters:  {&#39;model__var_smoothing&#39;: 0.1}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Recall:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">])</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Knn
+Precision: 0.22542459384991148
+Recall: 0.24561403508771928
+Accuracy: 0.24561403508771928
+Random Forest
+Precision: 0.23260462652776706
+Recall: 0.24162679425837322
+Accuracy: 0.24162679425837322
+Neural Network
+Precision: 0.23520049785781907
+Recall: 0.266347687400319
+Accuracy: 0.266347687400319
+SVM
+Precision: 0.2616681593365236
+Recall: 0.266347687400319
+Accuracy: 0.266347687400319
+Naive Bayes
+Precision: 0.21223768428814818
+Recall: 0.25996810207336524
+Accuracy: 0.25996810207336524
+</pre></div>
+</div>
+</div>
+</div>
+<p>The scores are really low, and it could be due to a lot of factors, let s analyze it:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do the confusion matrix for each model</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Truth&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/08e0d13f593644d0015dbb800c70bc071f9a709f523674587f98cc1259ae72bf.png" src="_images/08e0d13f593644d0015dbb800c70bc071f9a709f523674587f98cc1259ae72bf.png" />
+<img alt="_images/73d9546628affac0bdd106b4d1e33f861f1bd67e9f642eff69a3339be0d0c3c1.png" src="_images/73d9546628affac0bdd106b4d1e33f861f1bd67e9f642eff69a3339be0d0c3c1.png" />
+<img alt="_images/eceab67c82dd63173f7bded79f93380d927c3a28595258f2f343e6dab5f0cc83.png" src="_images/eceab67c82dd63173f7bded79f93380d927c3a28595258f2f343e6dab5f0cc83.png" />
+<img alt="_images/020d16bed06711437bba4a34f94eb1005931d1f725940f2206d001f5966a281f.png" src="_images/020d16bed06711437bba4a34f94eb1005931d1f725940f2206d001f5966a281f.png" />
+<img alt="_images/aae98f44205205f3ffa11ec787ab355232c9a078c3356cfc70abb228afe795c7.png" src="_images/aae98f44205205f3ffa11ec787ab355232c9a078c3356cfc70abb228afe795c7.png" />
+</div>
+</div>
+<p>The results are concentrated in one area, where we have the most number of values, but i can notice that the wrong results in most of the cases are really close to the actual value, let s graph it to see if i m right</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 4 histograms of the y pred of the best model where the ytest is 5,6,7,8</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="nb">max</span><span class="p">([</span><span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">()]):</span>
+        <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">ring</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">y_pred</span><span class="p">[</span><span class="n">y_test</span> <span class="o">==</span> <span class="n">ring</span><span class="p">])</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Ring: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">ring</span><span class="p">))</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b96e551e5c49277c63b016f3c303640bfc3941c640311378f65a163efe2326f9.png" src="_images/b96e551e5c49277c63b016f3c303640bfc3941c640311378f65a163efe2326f9.png" />
+<img alt="_images/6c4f31b38045db70d8de7996188aeaddec1267b6e524eecd978630c6242179a2.png" src="_images/6c4f31b38045db70d8de7996188aeaddec1267b6e524eecd978630c6242179a2.png" />
+<img alt="_images/08ae9aabf9bcb794f965ef92b5f430b92a15207f90386391758d1d1fa5866a15.png" src="_images/08ae9aabf9bcb794f965ef92b5f430b92a15207f90386391758d1d1fa5866a15.png" />
+<img alt="_images/7d4642e9d394457af7c55870057a32d8f56929c6ebbe13b388a006bb6a129904.png" src="_images/7d4642e9d394457af7c55870057a32d8f56929c6ebbe13b388a006bb6a129904.png" />
+<img alt="_images/9ff59d2a73557dfb260ef44ade3955f7ad971b23bdbce43ccfe7ec2d4815a0a6.png" src="_images/9ff59d2a73557dfb260ef44ade3955f7ad971b23bdbce43ccfe7ec2d4815a0a6.png" />
+<img alt="_images/dbf1f2c0ca0f0fe10c12606d3557287975bed8f3fff3a67e7abe3359a63638b2.png" src="_images/dbf1f2c0ca0f0fe10c12606d3557287975bed8f3fff3a67e7abe3359a63638b2.png" />
+<img alt="_images/e17200f832a7d20cd3ee26d80cf33e33ad4fd0ed63ce54ac209e4aa18ef8601b.png" src="_images/e17200f832a7d20cd3ee26d80cf33e33ad4fd0ed63ce54ac209e4aa18ef8601b.png" />
+<img alt="_images/9132029ba24c00cc1d23fff14276b926c95aac24de9978295d95c4eefcc1af4d.png" src="_images/9132029ba24c00cc1d23fff14276b926c95aac24de9978295d95c4eefcc1af4d.png" />
+<img alt="_images/c0d5144828b288d469aa1e011b62330a6fe0804d77d99a9eefba81f928c58847.png" src="_images/c0d5144828b288d469aa1e011b62330a6fe0804d77d99a9eefba81f928c58847.png" />
+<img alt="_images/6fff9ae07d2a1b34d4b6a10e0bab1567ddfe8ddaea60155e3c6dc44d6df678e6.png" src="_images/6fff9ae07d2a1b34d4b6a10e0bab1567ddfe8ddaea60155e3c6dc44d6df678e6.png" />
+<img alt="_images/ff0daa57018a24db46844b2011728c2a36ed84c9e59005f2ab5dbd4d72dfacdc.png" src="_images/ff0daa57018a24db46844b2011728c2a36ed84c9e59005f2ab5dbd4d72dfacdc.png" />
+<img alt="_images/09e1e1d7c1fc6e8499c2208370719101c54a036215e5f1cafa743983bca24814.png" src="_images/09e1e1d7c1fc6e8499c2208370719101c54a036215e5f1cafa743983bca24814.png" />
+<img alt="_images/37f1cc087aa7d0efbc250a0a16ca7c7245a6d580c6a2b5a6b04ed3bbc29ae25b.png" src="_images/37f1cc087aa7d0efbc250a0a16ca7c7245a6d580c6a2b5a6b04ed3bbc29ae25b.png" />
+<img alt="_images/9d055a79c1bcaac8e1cbe171491fb4c8dc1a25ce1e12682662b8f25a0c23fd0b.png" src="_images/9d055a79c1bcaac8e1cbe171491fb4c8dc1a25ce1e12682662b8f25a0c23fd0b.png" />
+<img alt="_images/7e3bdb3480bde155fa12a0013f6335c3e487be72195c281c9d5c19c1cac5b41c.png" src="_images/7e3bdb3480bde155fa12a0013f6335c3e487be72195c281c9d5c19c1cac5b41c.png" />
+<img alt="_images/404d5f44a7ff2ddfb6c962507f8e1a243f1cfee6282cd5bed4392c0284d39571.png" src="_images/404d5f44a7ff2ddfb6c962507f8e1a243f1cfee6282cd5bed4392c0284d39571.png" />
+<img alt="_images/df52f3e9e73a9baf114920cf701d58c37ef84b390f069c5430f4363fba466aca.png" src="_images/df52f3e9e73a9baf114920cf701d58c37ef84b390f069c5430f4363fba466aca.png" />
+<img alt="_images/bd6be600f0a9cbbd39ceed0d7f348d69d251e22fa5f13e262d2753cbcd7f4734.png" src="_images/bd6be600f0a9cbbd39ceed0d7f348d69d251e22fa5f13e262d2753cbcd7f4734.png" />
+<img alt="_images/6cef03ab45db911c33cd501745109431362a05edce4767103c88750fd59e1a1d.png" src="_images/6cef03ab45db911c33cd501745109431362a05edce4767103c88750fd59e1a1d.png" />
+<img alt="_images/45f236f5d9e032c3677927623716849a857e0fe53ea5f7fc95dd7455a1dff096.png" src="_images/45f236f5d9e032c3677927623716849a857e0fe53ea5f7fc95dd7455a1dff096.png" />
+</div>
+</div>
+<p>As we can see the results are really close to the actual value, the problem is that is really hard to be really precise because there could be trees with the same dimension having 1 or 2 rings more or 1 or 2 rings less.
+Another problem is that we have a lot of data for certain numbers of rings and really few lines to train, so now i will try to train the models only with the values of rings where we have more than 100 lines of data</p>
+</section>
+<section id="test-with-different-group-of-data">
+<h2>Test with different group of data<a class="headerlink" href="#test-with-different-group-of-data" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+<span class="n">num_rings</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">100</span>
+<span class="n">num_rings</span> <span class="o">=</span> <span class="n">num_rings</span><span class="p">[</span><span class="n">num_rings</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+<span class="n">df_abalone_big</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">num_rings</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone_big</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rings
+9     689
+10    634
+8     568
+11    487
+7     391
+12    267
+6     259
+13    203
+14    126
+5     115
+15    103
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df_abalone_big</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Rings&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_abalone_big</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training model: &quot;</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+    <span class="n">pipe</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scaler&#39;</span><span class="p">,</span> <span class="n">MinMaxScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">])])</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipe</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;grid&#39;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters: &quot;</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_pred</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Training model:  Knn
+Best parameters:  {&#39;model__n_neighbors&#39;: 40}
+Training model:  Random Forest
+Best parameters:  {&#39;model__max_depth&#39;: 20, &#39;model__n_estimators&#39;: 300}
+Training model:  Neural Network
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best parameters:  {}
+Training model:  SVM
+Best parameters:  {&#39;model__C&#39;: 1000, &#39;model__gamma&#39;: 0.1}
+Training model:  Naive Bayes
+Best parameters:  {&#39;model__var_smoothing&#39;: 0.1}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Recall:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">])</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Knn
+Precision: 0.27038511294636447
+Recall: 0.2697311361665221
+Accuracy: 0.2697311361665221
+Random Forest
+Precision: 0.2452509924081825
+Recall: 0.2523850823937554
+Accuracy: 0.2523850823937554
+Neural Network
+Precision: 0.25987819279358837
+Recall: 0.2888117953165655
+Accuracy: 0.2888117953165655
+SVM
+Precision: 0.27473581742524317
+Recall: 0.28360797918473546
+Accuracy: 0.28360797918473546
+Naive Bayes
+Precision: 0.21016814408199055
+Recall: 0.25498699045967044
+Accuracy: 0.25498699045967044
+</pre></div>
+</div>
+</div>
+</div>
+<p>As we can see the results are not that different from the previous ones, nothing really changed, but we can see it better through a confusion matrix</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do the confusion matrix for each model</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Truth&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/86f43a3d8069cc8bd0c8d98a9b5af78399c26ff97dfb5f651d0d8d3c89264f32.png" src="_images/86f43a3d8069cc8bd0c8d98a9b5af78399c26ff97dfb5f651d0d8d3c89264f32.png" />
+<img alt="_images/10cb842c484a5c96925b62d4fab22debe61f5dd03d3215fcfb19db7fa1104490.png" src="_images/10cb842c484a5c96925b62d4fab22debe61f5dd03d3215fcfb19db7fa1104490.png" />
+<img alt="_images/6a6ccedf44bed8c69b295b01f9ff3fe406395ba41fbc0fb2286e3028290b87d3.png" src="_images/6a6ccedf44bed8c69b295b01f9ff3fe406395ba41fbc0fb2286e3028290b87d3.png" />
+<img alt="_images/63cfc1036384364ab8df09c866ca5597c58c7b545df02873db333e5aa93f37fe.png" src="_images/63cfc1036384364ab8df09c866ca5597c58c7b545df02873db333e5aa93f37fe.png" />
+<img alt="_images/53a20db35d968f129d1227aa1fb03e2cc91c5b7d60fc309fdf11ed1befa646be.png" src="_images/53a20db35d968f129d1227aa1fb03e2cc91c5b7d60fc309fdf11ed1befa646be.png" />
+</div>
+</div>
+<p>The results are almost identical to the previous ones and probably because the trees are too much similars, but still i think having a margin of error of 2 is a really good results</p>
+<p>we could try the same thing with the data where we have less values to see if we have a greater diversity in the trees</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">num_rings</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">100</span>
+<span class="n">num_rings</span> <span class="o">=</span> <span class="n">num_rings</span><span class="p">[</span><span class="n">num_rings</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+<span class="n">df_abalone_little</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">num_rings</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone_little</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rings
+16    67
+17    58
+4     57
+18    42
+19    32
+20    26
+3     15
+21    14
+23     9
+22     6
+27     2
+24     2
+29     1
+2      1
+26     1
+25     1
+1      1
+Name: count, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">df_abalone_little</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Rings&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df_abalone_little</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training model: &quot;</span><span class="p">,</span> <span class="n">model_name</span><span class="p">)</span>
+    <span class="n">pipe</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s1">&#39;scaler&#39;</span><span class="p">,</span> <span class="n">MinMaxScaler</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;model&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">])])</span>
+    <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipe</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;grid&#39;</span><span class="p">],</span> <span class="n">cv</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Best parameters: &quot;</span><span class="p">,</span> <span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">y_pred</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">average</span><span class="o">=</span><span class="s1">&#39;weighted&#39;</span><span class="p">)</span>
+    <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Training model:  Knn
+Best parameters:  {&#39;model__n_neighbors&#39;: 40}
+Training model:  Random Forest
+Best parameters:  {&#39;model__max_depth&#39;: 1, &#39;model__n_estimators&#39;: 100}
+Training model:  Neural Network
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+/Users/leonardovaia/miniconda3/envs/ml_venv/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py:691: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (200) reached and the optimization hasn&#39;t converged yet.
+  warnings.warn(
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Best parameters:  {}
+Training model:  SVM
+Best parameters:  {&#39;model__C&#39;: 1, &#39;model__gamma&#39;: 0.1}
+Training model:  Naive Bayes
+Best parameters:  {&#39;model__var_smoothing&#39;: 0.01}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Precision:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Precision&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Recall:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Recall&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Accuracy:&#39;</span><span class="p">,</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Knn
+Precision: 0.1875934199754817
+Recall: 0.31683168316831684
+Accuracy: 0.31683168316831684
+Random Forest
+Precision: 0.1258023106546855
+Recall: 0.27722772277227725
+Accuracy: 0.27722772277227725
+Neural Network
+Precision: 0.2155636616293208
+Recall: 0.36633663366336633
+Accuracy: 0.36633663366336633
+SVM
+Precision: 0.11666666666666665
+Recall: 0.27722772277227725
+Accuracy: 0.27722772277227725
+Naive Bayes
+Precision: 0.2202557755775578
+Recall: 0.13861386138613863
+Accuracy: 0.13861386138613863
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do the confusion matrix for each model</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="k">for</span> <span class="n">model_name</span><span class="p">,</span> <span class="n">model_info</span> <span class="ow">in</span> <span class="n">model_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model_info</span><span class="p">[</span><span class="s1">&#39;Y_pred&#39;</span><span class="p">]</span>
+    <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Predicted&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Truth&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">model_name</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/033966b99abc0642ff4d61c21c141a5558496556d0f651c1338c2bffbe0c2797.png" src="_images/033966b99abc0642ff4d61c21c141a5558496556d0f651c1338c2bffbe0c2797.png" />
+<img alt="_images/4454d74e9f273e23b90b4a4ac8ccf6742be378e1200ed62bb00253925f717cac.png" src="_images/4454d74e9f273e23b90b4a4ac8ccf6742be378e1200ed62bb00253925f717cac.png" />
+<img alt="_images/77debc64dca20374cbdb308c89127cea69b74436d95e695bcbd94ee6ee9e05b7.png" src="_images/77debc64dca20374cbdb308c89127cea69b74436d95e695bcbd94ee6ee9e05b7.png" />
+<img alt="_images/0b8ac6d909fcd35d9e8ca358c3b2a55e433a2f814814a421853334da1524e7e2.png" src="_images/0b8ac6d909fcd35d9e8ca358c3b2a55e433a2f814814a421853334da1524e7e2.png" />
+<img alt="_images/1cd4b4ca455b6b80fbdc7c447c29400d50cf9be515de5ce4056a4fb509aa6f0a.png" src="_images/1cd4b4ca455b6b80fbdc7c447c29400d50cf9be515de5ce4056a4fb509aa6f0a.png" />
+</div>
+</div>
+<p>We obtained a much worse results and here the problem is problably having few data to train on and so it is really bad, let s try and visualize it grafically with all the data and see if we can see something interesting</p>
+</section>
+<section id="pca-for-visualization">
+<h2>PCA for visualization<a class="headerlink" href="#pca-for-visualization" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do a pca on the data to create just 4 columns plus the column &quot;Rings&quot;</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
+
+<span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">pca</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df_abalone</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Rings&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="n">df_abalone_pca</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">df_abalone</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Rings&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+<span class="n">df_abalone_pca</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_abalone_pca</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;PCA1&quot;</span><span class="p">,</span> <span class="s2">&quot;PCA2&quot;</span><span class="p">])</span>
+
+<span class="n">df_abalone_pca</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_abalone</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">]</span>
+
+<span class="n">df_abalone_pca</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PCA1</th>
+      <th>PCA2</th>
+      <th>Rings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.188669</td>
+      <td>-0.775079</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>-0.062216</td>
+      <td>-0.991828</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-0.103128</td>
+      <td>0.113378</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.189233</td>
+      <td>-0.774655</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-1.074963</td>
+      <td>-0.058865</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_abalone</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Length</th>
+      <th>Diameter</th>
+      <th>Height</th>
+      <th>Whole weight</th>
+      <th>Shucked weight</th>
+      <th>Viscera weight</th>
+      <th>Shell weight</th>
+      <th>Rings</th>
+      <th>I</th>
+      <th>M</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.455</td>
+      <td>0.365</td>
+      <td>0.095</td>
+      <td>0.5140</td>
+      <td>0.2245</td>
+      <td>0.1010</td>
+      <td>0.150</td>
+      <td>15</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.350</td>
+      <td>0.265</td>
+      <td>0.090</td>
+      <td>0.2255</td>
+      <td>0.0995</td>
+      <td>0.0485</td>
+      <td>0.070</td>
+      <td>7</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.530</td>
+      <td>0.420</td>
+      <td>0.135</td>
+      <td>0.6770</td>
+      <td>0.2565</td>
+      <td>0.1415</td>
+      <td>0.210</td>
+      <td>9</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.440</td>
+      <td>0.365</td>
+      <td>0.125</td>
+      <td>0.5160</td>
+      <td>0.2155</td>
+      <td>0.1140</td>
+      <td>0.155</td>
+      <td>10</td>
+      <td>False</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.330</td>
+      <td>0.255</td>
+      <td>0.080</td>
+      <td>0.2050</td>
+      <td>0.0895</td>
+      <td>0.0395</td>
+      <td>0.055</td>
+      <td>7</td>
+      <td>True</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># do a 2d graph with the pca data and the column &quot;Rings&quot; as the color</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df_abalone_pca</span><span class="p">[</span><span class="s2">&quot;PCA1&quot;</span><span class="p">],</span> <span class="n">df_abalone_pca</span><span class="p">[</span><span class="s2">&quot;PCA2&quot;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">df_abalone_pca</span><span class="p">[</span><span class="s2">&quot;Rings&quot;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d2469f18dde517a01a9474aed512f542668bfbae7322160add850c69cd631649.png" src="_images/d2469f18dde517a01a9474aed512f542668bfbae7322160add850c69cd631649.png" />
+</div>
+</div>
+<p>as we can see there is not much differentiation between the trees there is a lot of overlapping and so is really hard to diiferentiate them, and so the result are really much justified, the only thing we can note is that this lines tend to a certain color at the beginning and to another at the end, and this confirms that we obtain the wrong results but really close to the actual one</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Parcial 3 AI</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing-of-the-data">Preprocessing of the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#model-training">Model training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-with-different-group-of-data">Test with different group of data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pca-for-visualization">PCA for visualization</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
